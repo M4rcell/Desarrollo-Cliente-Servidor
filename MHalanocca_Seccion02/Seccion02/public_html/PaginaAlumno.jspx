@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html">
+    <jsp:output omit-xml-declaration="true" doctype-root-element="HTML"
+                doctype-system="http://www.oracle.com/jdeveloper/html5.dtd" doctype-public="-//DTD HTML5 //EN"/>
+    <jsp:directive.page contentType="text/html;charset=windows-1252"/>
+    <f:view>
+        <html>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+                <title>PaginaAlumno</title>
+                <style  
+                #messages{
+                background :blue;
+                    }
+            </style>
+            </head>
+            <body>
+            
+                <h:form>
+               
+                    <p>
+                        <label>Nombre :  </label> <h:inputText value="#{PaginaAlumno.ANombre}"/>
+                         &#160;&#160;
+                    </p>
+                    <p>
+                        <label>Apellidos        : </label><h:inputText value="#{PaginaAlumno.AApellidos}"/>
+                    </p>
+                    <p>
+                        <label>Fecha Nacimiento :</label><h:inputText value="#{PaginaAlumno.AFechaNacimiento}"/>
+                    </p>
+                    <p>
+                        <label>Edad : </label><h:inputText value="#{PaginaAlumno.AEdad}"/>
+                    </p>
+                    <P>
+                        <label>Codigo :</label><h:inputText value="#{PaginaAlumno.ACodigo}"/>
+                    </P>
+                    <P>
+                        <label>Sexo</label>
+                        <h:selectOneMenu value="#{PaginaAlumno.ASexo}">
+                          <f:selectItem itemLabel="Maculino"/>
+                          <f:selectItem itemLabel="Femenino"/>
+                          <f:selectItem itemLabel="Seleccione"/>
+                        </h:selectOneMenu >
+                     </P>
+                     <div id="container">
+
+                    <h:commandButton action="#{PaginaAlumno.showMessages}" value="Click AQUI"/>
+                     <!-- <f:ajax render="@form" /> -->
+                    </div>
+                    
+                  <h:messages id="messages" showSummary="true" showDetail="true"/>
+                </h:form>
+            </body>
+        </html>
+    </f:view>
+</jsp:root>

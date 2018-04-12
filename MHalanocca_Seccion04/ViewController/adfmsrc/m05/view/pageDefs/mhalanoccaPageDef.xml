@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="mhalanoccaPageDef"
+                Package="m05.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <taskFlow id="mhalanocca_tf_reutilizable1"
+              taskFlowId="/WEB-INF/mhalanocca_tf_reutilizable.xml#mhalanocca_tf_reutilizable" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="inputTitle" value="right panel"/>
+      </parameters>
+    </taskFlow>
+    <taskFlow id="mhalanocca_tf_reutilizable2"
+              taskFlowId="/WEB-INF/mhalanocca_tf_reutilizable.xml#mhalanocca_tf_reutilizable" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"/>
+    <taskFlow id="mhalanocca_tf_reutilizable3"
+              taskFlowId="/WEB-INF/mhalanocca_tf_reutilizable.xml#mhalanocca_tf_reutilizable" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="inputTitle" value="Panel  Derecho"/>
+      </parameters>
+    </taskFlow>
+    <taskFlow id="mhalanocca_tf_reutilizable4"
+              taskFlowId="/WEB-INF/mhalanocca_tf_reutilizable.xml#mhalanocca_tf_reutilizable" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="inputTitle" value=" Panel Izquierdo"/>
+      </parameters>
+    </taskFlow>
+    <taskFlow id="mhalanocca_tf_reutilizable5"
+              taskFlowId="/WEB-INF/mhalanocca_tf_reutilizable.xml#mhalanocca_tf_reutilizable" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="inputTitle" value="Panel Derecho"/>
+      </parameters>
+    </taskFlow>
+  </executables>
+  <bindings/>
+</pageDefinition>

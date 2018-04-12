@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="Principal.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow height="50px" id="gr3">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                        <!-- Header -->
+                         <af:outputFormatted value="UNIVERSIDAD  ALAS PERUANAS  " id="of1"/>
+                        <af:outputFormatted value=" -------------" id="of2"/>
+                        <af:outputFormatted value=" DESARROLLO CLIENTE SERVIDOR" id="of3"/>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="100%" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                        <!-- Content -->
+                        
+                        <af:outputFormatted value="NOMBRE  :   " id="of4"/>
+                        <af:outputFormatted value="  MARCEL HALANOCCA HUARACHA" id="of5"/>
+                        <br/>
+                        <af:outputFormatted value="CODIGO :  " id="of6"/>
+                        <af:outputFormatted value="  2014124892" id="of7"/>
+                        <br/>
+                        <af:button text="TRABAJADOR" id="Pg_Principal" action="go_traba"/>
+                        <af:button text="DEPARTAMENTO" id="Pg_Departamento" action="go_depa"/>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="50px" id="gr1">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc3">
+                        <!-- Footer -->
+                       <af:commandLink text="http://www.uap.edu.pe" id="cl0"/>                   </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>
